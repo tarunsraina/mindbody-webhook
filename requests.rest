@@ -1,0 +1,258 @@
+
+
+POST https://huge-monster-12.hasura.app/api/rest/add-user
+Content-Type: application/json
+x-hasura-admin-secret : QSSjc4VSrK30FkMYSbmIdYjzSkFGAxR0ePw08GDompchKoFnn7n9ngaGi8ACXuxQ
+x-hasura-role : user
+x-hasura-user-id : 70a0405e-38c7-409c-81b1-947d93a31f40
+
+{
+    "username":"kiran",
+    "password":"kiran123"
+}
+
+###
+
+GET https://huge-monster-12.hasura.app/api/rest/users
+Content-Type: application/json
+x-hasura-admin-secret : QSSjc4VSrK30FkMYSbmIdYjzSkFGAxR0ePw08GDompchKoFnn7n9ngaGi8ACXuxQ
+x-hasura-role : user
+x-hasura-user-id : 70a0405e-38c7-409c-81b1-947d93a31f40
+
+
+
+###
+
+
+POST https://huge-monster-12.hasura.app/api/rest/add-event
+Content-Type: application/json
+x-hasura-admin-secret : QSSjc4VSrK30FkMYSbmIdYjzSkFGAxR0ePw08GDompchKoFnn7n9ngaGi8ACXuxQ
+
+{
+    "user_id":"70a0405e-38c7-409c-81b1-947d93a31f40",
+    "BLOOD_GLUCOSE": "228g",
+    "BLOOD_PRESSURE_DIASTOLIC" : "845gm",
+    "BLOOD_PRESSURE_SYSTOLIC" : "426gm",	
+    "BODY_FAT_PERCENTAGE" : 65,
+    "BODY_MASS_INDEX": "26",	
+    "BODY_TEMPERATURE" : "27 celsius",	
+    "HEART_RATE" : "normal",
+    "HEIGHT" : "160cm",	
+    "STEPS": 5433,
+    "WEIGHT" : 	"65kg",
+    "SLEEP_IN_BED": 490,
+    "SLEEP_ASLEEP": 200,
+    "SLEEP_AWAKE" : 290,
+    "WORKOUT" : "no"
+
+}
+
+
+###
+
+GET https://huge-monster-12.hasura.app/api/rest/events
+Content-Type: application/json
+x-hasura-admin-secret : QSSjc4VSrK30FkMYSbmIdYjzSkFGAxR0ePw08GDompchKoFnn7n9ngaGi8ACXuxQ
+x-hasura-role : user
+x-hasura-user-id : 70a0405e-38c7-409c-81b1-947d93a31f40
+
+
+###
+
+GET http://localhost:3000/total-steps
+
+{
+    "start_time" : "10",
+    "end_time" : "12"
+}
+
+###
+
+GET https://huge-monster-12.hasura.app/api/rest/events
+Content-Type: application/json
+x-hasura-admin-secret : QSSjc4VSrK30FkMYSbmIdYjzSkFGAxR0ePw08GDompchKoFnn7n9ngaGi8ACXuxQ
+x-hasura-role : user
+x-hasura-user-id : 70a0405e-38c7-409c-81b1-947d93a31f40
+
+
+###
+
+
+MINDBODY
+
+###
+
+https://api.mindbodyonline.com/public/v6/appointment/addons
+Api-Key : b0d51657180b45b38bfb1bb4b5581082
+Authorization : 93856a15281f4e39bc069722373162c3eb7e29d3ee49476aac9ae851a998febb
+SiteId : -99
+
+###
+
+https://api.mindbodyonline.com/public/v6/appointment/appointmentoptions
+Api-Key : b0d51657180b45b38bfb1bb4b5581082
+Authorization : 93856a15281f4e39bc069722373162c3eb7e29d3ee49476aac9ae851a998febb
+SiteId : -99
+
+###
+
+https://api.mindbodyonline.com/public/v6/appointment/bookableitems/?SessionTypeIds=34332&StaffIds=233&StartDate=01/01/2000&EndDate=01/02/2000
+Api-Key : b0d51657180b45b38bfb1bb4b5581082
+Authorization : 93856a15281f4e39bc069722373162c3eb7e29d3ee49476aac9ae851a998febb
+SiteId : -99
+
+###
+
+https://api.mindbodyonline.com/public/v6/sale/acceptedcardtypes
+Api-Key : b0d51657180b45b38bfb1bb4b5581082
+Authorization : 93856a15281f4e39bc069722373162c3eb7e29d3ee49476aac9ae851a998febb
+SiteId : -99
+
+###
+
+https://api.mindbodyonline.com/public/v6/sale/products
+Api-Key : b0d51657180b45b38bfb1bb4b5581082
+Authorization : 93856a15281f4e39bc069722373162c3eb7e29d3ee49476aac9ae851a998febb
+SiteId : -99
+
+###
+
+
+https://api.mindbodyonline.com/public/v6/payroll/scheduledserviceearnings
+Api-Key : b0d51657180b45b38bfb1bb4b5581082
+Authorization : 93856a15281f4e39bc069722373162c3eb7e29d3ee49476aac9ae851a998febb
+SiteId : -99
+
+###
+
+https://api.mindbodyonline.com/public/v6/enrollment/enrollments
+Api-Key : b0d51657180b45b38bfb1bb4b5581082
+Authorization : 93856a15281f4e39bc069722373162c3eb7e29d3ee49476aac9ae851a998febb
+SiteId : -99
+
+###
+
+https://api.mindbodyonline.com/public/v6/class/classes
+Api-Key : b0d51657180b45b38bfb1bb4b5581082
+Authorization : 93856a15281f4e39bc069722373162c3eb7e29d3ee49476aac9ae851a998febb
+SiteId : -99
+
+###
+
+https://api.mindbodyonline.com/public/v6/sale/giftcardbalance?barcodeId=9876543210
+Api-Key : b0d51657180b45b38bfb1bb4b5581082
+Authorization : 93856a15281f4e39bc069722373162c3eb7e29d3ee49476aac9ae851a998febb
+SiteId : -99
+Content-Type: application/json
+
+###
+
+https://api.mindbodyonline.com/public/v6/sale/sales
+Api-Key : b0d51657180b45b38bfb1bb4b5581082
+Authorization : 93856a15281f4e39bc069722373162c3eb7e29d3ee49476aac9ae851a998febb
+SiteId : -99
+Content-Type: application/json
+
+###
+
+https://api.mindbodyonline.com/public/v6/appointment/availabledates
+Api-Key : b0d51657180b45b38bfb1bb4b5581082
+Authorization : 93856a15281f4e39bc069722373162c3eb7e29d3ee49476aac9ae851a998febb
+SiteId : -99
+Content-Type: application/json
+
+###
+
+https://api.mindbodyonline.com/public/v6/client/clientpurchases?ClientId=1
+Authorization : 93856a15281f4e39bc069722373162c3eb7e29d3ee49476aac9ae851a998febb
+SiteId : -99
+Content-Type: application/json
+Api-Key : b0d51657180b45b38bfb1bb4b5581082
+
+###
+
+https://api.mindbodyonline.com/public/v6/client/clientvisits?ClientId=2
+Authorization : 93856a15281f4e39bc069722373162c3eb7e29d3ee49476aac9ae851a998febb
+SiteId : -99
+Content-Type: application/json
+Api-Key : b0d51657180b45b38bfb1bb4b5581082
+
+###
+
+https://api.mindbodyonline.com/public/v6/appointment/staffappointments
+Authorization : 93856a15281f4e39bc069722373162c3eb7e29d3ee49476aac9ae851a998febb
+SiteId : -99
+Content-Type: application/json
+Api-Key : b0d51657180b45b38bfb1bb4b5581082
+
+
+###
+
+https://api.mindbodyonline.com/partnergateway/consumer/activity/v1/businesses
+Authorization : 93856a15281f4e39bc069722373162c3eb7e29d3ee49476aac9ae851a998febb
+SiteId : -99
+Content-Type: application/json
+Api-Key : b0d51657180b45b38bfb1bb4b5581082
+
+###
+
+
+
+POST https://huge-monster-12.hasura.app/api/rest/add-event
+content-type : application/json
+x-hasura-admin-secret : QSSjc4VSrK30FkMYSbmIdYjzSkFGAxR0ePw08GDompchKoFnn7n9ngaGi8ACXuxQ
+
+{
+        "user_id": "0472adf9-4ba9-489a-b591-9bb2d1453ff5",
+        "FROM_TIME": "2022-10-12T09:58:06.605081+00:00",
+        "TO_TIME": "2022-10-13T09:58:06.605081+00:00",
+        "param_type": "BLOOD_GLUCOSE",
+        "param_value": "70",
+        "flag": false,
+        "notes": "nothing"
+}
+
+###
+
+
+https://huge-monster-12.hasura.app/api/rest/event
+content-type : application/json
+x-hasura-admin-secret : QSSjc4VSrK30FkMYSbmIdYjzSkFGAxR0ePw08GDompchKoFnn7n9ngaGi8ACXuxQ
+X-Hasura-role : user 
+X-Hasura-User-Id : 70a0405e-38c7-409c-81b1-947d93a31f40
+
+###
+
+
+70a0405e-38c7-409c-81b1-947d93a31f40
+
+0472adf9-4ba9-489a-b591-9bb2d1453ff5
+
+
+###
+
+POST https://signin.mindbodyonline.com/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+{
+    "grant_type":"authorization_code",
+    "client_id":"a860d376-26fe-4e03-a1b9-6125a1527a68",
+    "client_secret":"koPZnsfIjDV4tG3MhNIOdtdyrrrKvn3Jmn27CiNDJ78=",
+    "code":"7D7F26B2FE9C53945C769F157703CB0808BBFD797921CE455A0893CEB33D0194-1",
+    "redirect_uri":"https://www.google.com",
+    "scope":"offline_access PG.ConsumerActivity.Api.Read"
+}
+
+
+###
+
+https://api.mindbodyonline.com/partnergateway/consumer/activity/v1/visits
+API-Key : b0d51657180b45b38bfb1bb4b5581082
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjlERkRDNzQwMUU5NTk2RTAxNTQxRkMyQTM1QUIzRkQ4NjhGRUIwMDYiLCJ4NXQiOiJuZjNIUUI2Vmx1QVZRZndxTmFzXzJHai1zQVkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NpZ25pbi5taW5kYm9keW9ubGluZS5jb20iLCJuYmYiOjE2NjYxMDE3NTYsImlhdCI6MTY2NjEwMTc1NiwiZXhwIjoxNjY2MTAyMDU2LCJhdWQiOiJhODYwZDM3Ni0yNmZlLTRlMDMtYTFiOS02MTI1YTE1MjdhNjgiLCJhbXIiOlsiZXh0ZXJuYWwiXSwibm9uY2UiOiJhYmNkZWYiLCJjX2hhc2giOiJjcDNVRkpxeFN4VzJtdTNLc3NBTzVRIiwic2lkIjoiNUMwMjIxM0FBRTIzN0FERDI2N0MxMjdCNEI1NDdGRTUiLCJzdWIiOiI2MzQ1NGNmZDlkMzEzMzZhNTEyZTE2YWYiLCJhdXRoX3RpbWUiOjE2NjYwODcwMDksImlkcCI6Ikdvb2dsZSJ9.BIC06APCzYkkUHBLOIbbCqiYRIMg9XZWgqc-tIebW8syNJyal9qMsHS-9PE4eLtpVyty-rSiScIoAfPQUYqgIsrz4Rpe1pGHZT2pmPRHfFph_-xC-B1lmiGeN3mSLlU5ayllPcXJtF5yZihrRVfTuNaOVtdSNV_aS_Zjv3b8SfhoprhnViFwx-rZOaQLHBpClrb_J_mYs9Q25NGiVaMHJ6tBNCWEXf8KT2GUDj6GKdSrFBVzV6EVXV7EcezCoj0tjpLcuSXTG2-qcb8RColPvP-MZq_vYr9so7146CrqgW0Y4Rhu2MMiVQ0J6JL6v54sV9pzZTot8LKj_46dG1g_XVfGfww0ydyVADhgcgN0HTNmuzJywLVPtFnOjVFGEtr0_B7WlkdN86t6LTqZbjUX94qomGu8lpVS8iDzhlkkUWhtUu3aCnoUmDovRUl4BkwY2NEOJjqiZBF6tRnMPUHCfIgkzyQfP3gr1gVqIbFYR8IzC6M8qdBRbD1zvo6O-TYwdTA5rnGuWIWvWyRoa2DA4Q-i0j0eH8LGTtQceJ3qz7ekwXiAsieeklIadsbtcrbB_MMauU2DnYOK5IuSCzombPmVAl13uQXIIEHyufU7VgAAMYfv2ZHyRO4p5LMUkbcKFmNBkd6HLKHj6WBlE3psh-Q1lt7Vctp5fe9jyHlJQgg&scope=email%20openid%20profile%20PG.ConsumerActivity.Api.Read%20PG.ConsumerActivity.Api.Write&session_state=ZTl5HK9O3HzOsJAuX0GPNOdMvr3PSARdXsOMU0IdW2k.8AC8F91E926B6C174E55DA5D38E48A16
+
+
+###
+
+
+POST https://api.mindbodyonline.com/partnergateway/consumer/activity/v1/simulate/visit
+
